@@ -1,4 +1,4 @@
-# QuickHTTP ⚡
+# Instant HTTP ⚡
 ## The simple static HTTP server generator, that launches a server in 1 line of code.
 
 Serve websites, documents, images and more with 22 characters of code. Uses [Express.js](https://expressjs.com/), the most popular web server library for Node.js.
@@ -16,31 +16,31 @@ Got no idea how to JavaScript at all? Skip to the step-by-step tutorial
 
 #### Install:
 ```
-npm i quickhttp
+npm i instanthttp
 ```
 
 #### Start a simple server:
 ```javascript
-require('quickhttp')()
+require('instanthttp')()
 ```
 #### Add some options (listed below):
 ```javascript
-require('quickhttp')({
+require('instanthttp')({
     options: 'here'
 })
 ```
 #### Adding a callback synchronously
 ```javascript
-require('quickhttp')({}, (data)=>{
+require('instanthttp')({}, (data)=>{
     console.log('Sync Callback')
     console.log(data)
 })
 ```
-_**Note:** You need to have an object (empty or with options) as the first parameter when using synchronous callbacks: `require('quickhttp')({}, ()=>{})`_
+_**Note:** You need to have an object (empty or with options) as the first parameter when using synchronous callbacks: `require('instanthttp')({}, ()=>{})`_
 
 #### Adding a callback asynchronously
 ```javascript
-require('quickhttp')()
+require('instanthttp')()
 .then((data)=>{
     console.log('Async Callback')
     console.log(data)
@@ -55,7 +55,7 @@ const options = {
     port: Number,
     dir: String
 }
-require('quickhttp')(options)
+require('instanthttp')(options)
 ```
 - `options.dir` needs to be compatible with Express.js's Static method (see [here](https://expressjs.com/en/starter/static-files.html)).
 - If `options.production` is not specified, it will be determined by `process.env.NODE_ENV` (set in .env file or by hosting services). If neither is provided, it will be assumed as `'development'`.
@@ -64,12 +64,12 @@ require('quickhttp')(options)
 ## Get started
 Need to setup a server, but don't know JavaScript?
 - Move all of your files into a new folder named `public` in the same directory.
-- Open a terminal in the current directory, and type `npm i quickhttp`
+- Open a terminal in the current directory, and type `npm i instanthttp`
 - Create a file named `index.js` and copy the following line into it. (Services like Heroku will launch index.js automatically.)
 ```javascript
-require('quickhttp')()
+require('instanthttp')()
 //OR
-require('quickhttp')({prod:true})
+require('instanthttp')({prod:true})
 ```
 - Production True: `websiteORip/anythinginthepublicfolder`
 - Production Empty: `websiteORip:3000/anythinginthepublicfolder`

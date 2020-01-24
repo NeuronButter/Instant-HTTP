@@ -30,16 +30,16 @@ function generate(options, callback) {
 
 
         if (mode === 'development') {
-            app.get('/quickhttphelper', function (req, res) {
+            app.get('/instanthttphelper', function (req, res) {
                 // Environment Mode is always development, because this feature is disabled in production mode.
-                res.send(`<head><title>QuickHTTP Helper</title><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></head>
+                res.send(`<head><title>instanthttp Helper</title><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></head>
 <body><div class="mt-3 container">
-<h1>QuickHTTP Helper</h1>
+<h1>instanthttp Helper</h1>
 <h2>Server Info</h2>
 <h3>Environment Mode: <i>Development</i></h3>
-<p>This is determined by <code>quickhttp({prod: true})</code>, which fallbacks to <code>process.env.NODE_ENV</code>, which fallbacks to <code>'development'</code>.</p>
+<p>This is determined by <code>instanthttp({prod: true})</code>, which fallbacks to <code>process.env.NODE_ENV</code>, which fallbacks to <code>'development'</code>.</p>
 <h3>Public Directory: <i>'${options.dir}'</i></h3>
-<p>Defined by <code>quickhttp({dir: 'static'})</code>, which fallbacks to <code>'public'</code>. Note that this needs to be compatible with Express.js's Static method (see <a href="https://expressjs.com/en/starter/static-files.html">here</a>).</p>
+<p>Defined by <code>instanthttp({dir: 'static'})</code>, which fallbacks to <code>'public'</code>. Note that this needs to be compatible with Express.js's Static method (see <a href="https://expressjs.com/en/starter/static-files.html">here</a>).</p>
 <h2 hidden>Client / Request Info</h2>
 <h3 hidden>TODO: Stuff here in a table</h3>
 </div></body>`)
@@ -47,9 +47,9 @@ function generate(options, callback) {
             })
         }
         if (mode === 'development') {
-            console.log(`Presto! You're running in development mode with port ${port} meaning that host:${port}/quickhttphelper has been enabled.`)
+            console.log(`Presto! You're running in development mode with port ${port} meaning that host:${port}/instanthttphelper has been enabled.`)
         } else {
-            console.log(`Presto! You're running in production mode with port ${port}. To enable QuickHTTP Helper, disable production mode.`)
+            console.log(`Presto! You're running in production mode with port ${port}. To enable instanthttp Helper, disable production mode.`)
         }
         if (callback) {
             app.listen(port, callback({

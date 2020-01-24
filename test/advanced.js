@@ -6,7 +6,7 @@ This tests sync callbacks, async callbacks and all options.
 
 Expected Result:
 Going to http://localhost:81/index.html produces "Success in /custom"
-Going to http://localhost:81/quickhttphelper produces an error
+Going to http://localhost:81/instanthttphelper produces an error
 */
 
 require('../index')({
