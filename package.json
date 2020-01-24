@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NeuronButter/instanthttp.git"
+    "url": "git+https://github.com/NeuronButter/instant-http.git"
   },
   "author": "NeuronButter",
   "license": "SEE LICENSE IN LICENSE",
   "bugs": {
-    "url": "https://github.com/NeuronButter/instanthttp/issues"
+    "url": "https://github.com/NeuronButter/instant-http/issues"
   },
-  "homepage": "https://github.com/NeuronButter/instanthttp#readme",
+  "homepage": "https://github.com/NeuronButter/instant-http#readme",
   "dependencies": {
     "express": "^4.17.1"
   }
