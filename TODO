@@ -1,0 +1,9 @@
+====================
+CURRENT TODOS
+(doesn't include future features (which is in README.md) or bug fixes)
+====================
+
+[ ] Make the Helper into a Vue project, and use hashing to pass down variables (such as index.html#/default?json="json in here")
+[ ] Express and QuickHTTP Version in Helper
+[ ] Clean up code
+[ ] Make a validator, using async .catch, or sync (err) to validate options as their proper type\

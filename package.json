@@ -1,0 +1,24 @@
+{
+  "name": "quickhttp",
+  "version": "1.0.0",
+  "description": "Create a static HTTP server in 1 line of code, with options for even more customisation.",
+  "main": "index.js",
+  "scripts": {
+    "simpleTest": "cd test && node simple.js",
+    "advancedTest": "cd test && node advanced.js",
+    "simpleEnvTest": "cd test && node simpleEnv.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NeuronButter/QuickHTTP.git"
+  },
+  "author": "NeuronButter",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/NeuronButter/QuickHTTP/issues"
+  },
+  "homepage": "https://github.com/NeuronButter/QuickHTTP#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
