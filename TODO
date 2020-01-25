@@ -6,4 +6,5 @@ CURRENT TODOS
 [ ] Make the Helper into a Vue project, and use hashing to pass down variables (such as index.html#/default?json="json in here")
 [ ] Express and instanthttp Version in Helper
 [ ] Clean up code
-[ ] Make a validator, using async .catch, or sync (err) to validate options as their proper type\
+[ ] Make a validator, using async .catch, or sync (err) to validate options as their proper type
+[ ] Support for Bootstrap when there's no internet (currently uses cdn rather than the CSS file)

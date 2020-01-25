@@ -32,9 +32,9 @@ function generate(options, callback) {
         if (mode === 'development') {
             app.get('/instanthttphelper', function (req, res) {
                 // Environment Mode is always development, because this feature is disabled in production mode.
-                res.send(`<head><title>instanthttp Helper</title><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></head>
+                res.send(`<head><title>Instant HTTP Helper</title><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></head>
 <body><div class="mt-3 container">
-<h1>instanthttp Helper</h1>
+<h1>Instant HTTP ⚡ Helper</h1>
 <h2>Server Info</h2>
 <h3>Environment Mode: <i>Development</i></h3>
 <p>This is determined by <code>instanthttp({prod: true})</code>, which fallbacks to <code>process.env.NODE_ENV</code>, which fallbacks to <code>'development'</code>.</p>

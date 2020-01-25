@@ -11,6 +11,7 @@ Got no idea how to JavaScript at all? Skip to the step-by-step tutorial
 - Customisable options
 - Supports synchronous and asynchronous callbacks ( with returned values in the future)
 - Only uses 1 direct dependency (Express.js)
+- Open Source! Anyone can help improve this package, and all the (very simple) code is available to check out yourself.
 
 ## Basics
 
@@ -57,7 +58,7 @@ const options = {
 }
 require('instanthttp')(options)
 ```
-- `options.dir` needs to be compatible with Express.js's Static method (see [here](https://expressjs.com/en/starter/static-files.html)).
+- `options.dir` needs to be compatible with Express.js's Static method (see [here](https://expressjs.com/en/starter/static-files.html)). It's passed into `express.static(options.dir)`
 - If `options.production` is not specified, it will be determined by `process.env.NODE_ENV` (set in .env file or by hosting services). If neither is provided, it will be assumed as `'development'`.
 
 
@@ -89,6 +90,7 @@ And presto! We have a server running serving files from images, documents to web
 
 ## 🚨Known Issues🚨
 - When running `node ./folder/file.js`, the directories aren't available. The quickest fix is to just get into the folder (`cd folder`), then run `node file.js` from within the directory.
+- The current /InstantHTTPHelper uses a CDN for Bootstrap, therefore, it can only load styles whilst connected to the internet.
 
 # Credits
 
