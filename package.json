@@ -1,6 +1,6 @@
 {
   "name": "instanthttp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create a static HTTP server in 1 line of code, with options for even more customisation.",
   "main": "index.js",
   "scripts": {

@@ -79,6 +79,10 @@ _**Note:** Use {prod:true} when hosting a server such as Heroku._
 
 And presto! We have a server running serving files from images, documents to websites.
 
+## New in this release
+### Current Release: 1.0.1
+- Quick fixes to tests
+- Helper name fix
 
 ## Possible Future Development/Features
 - Website Templates
