@@ -1,6 +1,8 @@
 # Instant HTTP ⚡
 ## The simple static HTTP server generator, that launches a server in 1 line of code.
 
+[![forthebadge](https://forthebadge.com/images/badges/you-didnt-ask-for-this.svg)](https://forthebadge.com)[![forthebadge](https://forthebadge.com/images/badges/powered-by-electricity.svg)](https://forthebadge.com)[![forthebadge](https://forthebadge.com/images/badges/does-not-contain-treenuts.svg)](https://forthebadge.com)
+
 Serve websites, documents, images and more with 22 characters of code. Uses [Express.js](https://expressjs.com/), the most popular web server library for Node.js.
 
 Got no idea how to JavaScript at all? Skip to the step-by-step tutorial
@@ -101,3 +103,5 @@ And presto! We have a server running serving files from images, documents to web
 Made by NeuronButter (ooh! that's me), first version made a few thousand feet up in the air on a plane.
 
 Uses one dependency, [Express.js](https://expressjs.com/), for HTTP server.
+
+[![forthebadge](https://forthebadge.com/images/badges/uses-badges.svg)](https://forthebadge.com) from [For The Badge](https://forthebadge.com)
